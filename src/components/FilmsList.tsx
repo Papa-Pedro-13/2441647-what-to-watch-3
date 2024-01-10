@@ -8,6 +8,7 @@ interface FilmsListProps {
   filmsList: FilmType[];
   onClickHandler: (item: FilmType) => void;
 }
+///final
 const FilmsList: React.FC<FilmsListProps> = ({ filmsList, onClickHandler }) => {
   const [maxFilms, setMaxFilms] = useState(8);
   useEffect(() => {
